@@ -37,8 +37,7 @@ class MainActivity : AppCompatActivity() {
     //1
     private fun setupViewModel()
     {
-        mainViewModel = ViewModelProviders.of(this,
-            ViewModelFactory(ApiHelperImpl(RetrofitBuilder.apiService))
+        mainViewModel = ViewModelProviders.of(this,ViewModelFactory(ApiHelperImpl(RetrofitBuilder.apiService))
         ).get(MainViewModel::class.java)
     }
     //5
